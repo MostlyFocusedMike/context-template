@@ -2,23 +2,22 @@ import React, { useContext, useState, useEffect } from 'react';
 import './App.css';
 import AppContext from './context';
 
-
 const App = () => {
     const { example, setExample } = useContext(AppContext);
     const [formText, setFormText] = useState('');
 
     useEffect(() => {
         console.log('context here: ', example);
-    }, [example])
+    }, [example]);
 
     const handleChange = (e) => {
-        setFormText(e.target.value)
-    }
+        setFormText(e.target.value);
+    };
 
     const handleSubmit = (e) => {
         e.preventDefault();
         setExample(formText);
-    }
+    };
 
     return (
         <div className="App">
@@ -35,6 +34,6 @@ const App = () => {
 
         </div>
     );
-}
+};
 
 export default App;

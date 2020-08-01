@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import ContextProvider from './context/ContextProvider'
+import ContextProvider from './context/ContextProvider';
 import App from './App';
 
 ReactDOM.render(
@@ -10,5 +10,5 @@ ReactDOM.render(
             <App />
         </ContextProvider>
     </React.StrictMode>,
-    document.getElementById('root')
+    document.getElementById('root'),
 );
